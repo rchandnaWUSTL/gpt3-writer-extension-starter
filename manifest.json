@@ -1,6 +1,6 @@
 {
-  "name": "GPT-3 Writer",
-  "description": "Write a blog post in the style of your favorite thinker anywhere!",
+  "name": "GPT-3 Summarizer",
+  "description": "Summarize any text using GPT-3. Don't waste your time reading long articles, just summarize them in a few seconds.",
   "version": "1.0",
   "manifest_version": 3,
   "icons": {
@@ -11,6 +11,7 @@
   },
   "action": {
     "default_popup": "index.html",
-    "default_title": "Generate blog post"
-  }
+    "default_title": "Generate summary"
+  },
+  "permissions": ["contextMenus", "tabs", "storage"]
 }

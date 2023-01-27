@@ -1,6 +1,6 @@
 {
-  "name": "GPT-3 Summarizer",
-  "description": "Summarize any text using GPT-3. Don't waste your time reading long articles, just summarize them in a few seconds.",
+  "name": "magic blog post generator",
+  "description": "highlight your blog post title, we'll generate the rest",
   "version": "1.0",
   "manifest_version": 3,
   "icons": {
@@ -11,12 +11,13 @@
   },
   "action": {
     "default_popup": "index.html",
-    "default_title": "Generate summary"
+    "default_title": "Generate blog post"
   },
   "background": {
     "service_worker": "scripts/contextMenuServiceWorker.js"
   },
   "permissions": ["contextMenus", "tabs", "storage"],
+  "host_permissions": ["https://*/*"],
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
